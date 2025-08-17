@@ -2,6 +2,7 @@ import streamlit as st
 from about import About
 from chat import Chatbot
 from ingestion import Ingestion
+from knowledgebase import KnowledgebaseChat
 from streamlit_option_menu import option_menu
 
 
@@ -22,6 +23,7 @@ elif selected == "Chat Custom File":
     Chatbot.chatbot()
 
 elif selected == "Chat Knowledgebase":
+    KnowledgebaseChat.chat()
     print("[+] Do your Retriver code ")
 
 elif selected == "About":
